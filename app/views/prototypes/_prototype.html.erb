@@ -5,6 +5,6 @@
     <p class="card__summary">
       <%= prototype.catch_copy %>                                                          <%#修正した箇所></%>
     </p>
-    <%= link_to prototype.user.name, prototype_path(prototype.user), class: :card__user %>    <%#修正した箇所></%>
+    <%= link_to "by #{prototype.user.name}", user_path(prototype.user),class: :card__user %>   <%#修正した箇所></%>
   </div>
 </div>
