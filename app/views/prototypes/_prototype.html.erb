@@ -1,10 +1,10 @@
 <div class="card">
-  <%= link_to image_tag(prototype.image, class: :card__img ),user_path(prototype.id) %>
+  <%= link_to image_tag(prototype.image, class: :card__img ),prototype_path(prototype) %>  <%#修正した箇所></%>
   <div class="card__body">
-    <%= link_to prototype.title, user_path(prototype.id), class: :card__title%>
+    <%= link_to prototype.title, prototype_path(prototype), class: :card__title%>
     <p class="card__summary">
-      <%= prototype.catch_copy %>
+      <%= prototype.catch_copy %>                                                          <%#修正した箇所></%>
     </p>
-    <%= link_to prototype.user.name, user_path(prototype.id), class: :card__user %>
+    <%= link_to prototype.user.name, prototype_path(prototype.user), class: :card__user %>    <%#修正した箇所></%>
   </div>
 </div>

@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @prototypes = @user.prototypes
+                                   #削除  @prototypes = @user.prototypes
 
   end
 
